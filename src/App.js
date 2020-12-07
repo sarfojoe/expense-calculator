@@ -4,6 +4,7 @@ import Balance from "./components/Balance";
 import IncomeExpenses from "./components/IncomeExpenses";
 import Transaction from "./components/Transaction";
 import TransactionList from "./components/TransactionList";
+import AddTransaction from "./components/AddTransaction";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ const App = () => {
         <IncomeExpenses />
         <Transaction />
         <TransactionList />
+        <AddTransaction />
       </div>
     </div>
   );

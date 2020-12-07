@@ -1,7 +1,11 @@
 import React from "react";
 
-function AddTransaction() {
-  return <div> Add transaction </div>;
-}
+const AddTransaction = () => {
+  return (
+    <div>
+      <h2>Add transaction</h2>
+    </div>
+  );
+};
 
 export default AddTransaction;

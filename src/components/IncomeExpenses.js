@@ -1,7 +1,11 @@
 import React from "react";
 
-function IncomeExpenses() {
-  return <div>IncomeExpenses</div>;
-}
+const IncomeExpenses = () => {
+  return (
+    <div>
+      <h3>IncomeExpenses</h3>
+    </div>
+  );
+};
 
 export default IncomeExpenses;

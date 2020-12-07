@@ -6,20 +6,20 @@ import Transaction from "./components/Transaction";
 import TransactionList from "./components/TransactionList";
 import AddTransaction from "./components/AddTransaction";
 
+import { GlobalProvider } from "./context/GlobalState";
 import "./App.css";
 
 const App = () => {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className="container">
         <Balance />
         <IncomeExpenses />
-        <Transaction />
         <TransactionList />
         <AddTransaction />
       </div>
-    </div>
+    </GlobalProvider>
   );
 };
 

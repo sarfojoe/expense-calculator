@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
-const AddTransaction = () => {
+export const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
 
@@ -18,6 +18,7 @@ const AddTransaction = () => {
 
     addTransaction(newTransaction);
   };
+
   return (
     <>
       <h3>Add new transaction</h3>
@@ -48,5 +49,3 @@ const AddTransaction = () => {
     </>
   );
 };
-
-export default AddTransaction;

@@ -1,15 +1,15 @@
 import React from "react";
 import { Header } from "./components/Header";
-import Balance from "./components/Balance";
-import IncomeExpenses from "./components/IncomeExpenses";
-import Transaction from "./components/Transaction";
-import TransactionList from "./components/TransactionList";
-import AddTransaction from "./components/AddTransaction";
+import { Balance } from "./components/Balance";
+import { IncomeExpenses } from "./components/IncomeExpenses";
+import { TransactionList } from "./components/TransactionList";
+import { AddTransaction } from "./components/AddTransaction";
 
 import { GlobalProvider } from "./context/GlobalState";
+
 import "./App.css";
 
-const App = () => {
+function App() {
   return (
     <GlobalProvider>
       <Header />
@@ -21,6 +21,6 @@ const App = () => {
       </div>
     </GlobalProvider>
   );
-};
+}
 
 export default App;
